@@ -6,7 +6,6 @@ ls
     6  ls
     7  cd ..
     8  ls -la
-    9  cd ,ssh
    10  cd .ssh
    11  ls
    12  cat id_rsa
@@ -15,16 +14,15 @@ ls
    15  ls
    16  chmod 600 ~/.ssh/id_rsa
    17  ls
-   18  cat authorized_keys 
-   19  echo "s" >> ~/.ssh/authorized_keys
+   18  cat id_rsa.pub 
+   19  echo "public ssh key" >> ~/.ssh/authorized_keys
    20  chmod 600 ~/.ssh/authorized_keys
    21  cat authorized_keys 
    22  clear
    23  ls
-   24  cat id_rsa
+   24  cat id_rsa #copy all the content to github secret and variable
+
    25  cd ..
-   26  ls
-   27  vi deploy.sh
    28  ls
    29  cat deploy.sh 
    30  history
